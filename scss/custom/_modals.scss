@@ -1,0 +1,33 @@
+body.modal-open {
+    overflow: hidden;
+}
+.reveal-modal-bg {
+	background: rgba(0,0,0,0.7);
+}
+.reveal-modal{
+	border: solid 3px $smoke;
+	box-shadow: none;
+	.scrollable-content{
+		overflow-y: scroll;
+		height: 100%;
+		padding: 60px 0;
+	}
+	.wrapper {
+		text-align: center;
+		display: table-cell;
+		width: 100%;
+		vertical-align: middle;
+	}
+	a.close-reveal-modal {
+		top: 1.3rem;
+		right: 1.7rem;
+		font-size: 3rem;
+	}
+	p{
+		margin-top: 15px;
+	}
+	.lt-ie9 {
+		.reveal-modal {
+		}
+	}
+}

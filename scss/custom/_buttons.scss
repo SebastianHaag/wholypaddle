@@ -1,0 +1,24 @@
+.button{
+	display: inline-block;
+	overflow: hidden;
+	padding: 0.8rem 2rem;
+	color: $white;
+	font-family: 'moonbold';
+	background-color: transparent;
+	border: solid 3px $white;
+	@include css-transition($fast-transition);
+	&:hover, &:active, &:focus{
+			background-color: transparent;
+			color: $white;
+	}
+}
+@media #{$large-up}{
+	.button{
+		color: $white;
+		background-color: transparent;
+		&:hover, &:active{
+				background-color: $white;
+				color: $oil;
+		}
+	}
+}

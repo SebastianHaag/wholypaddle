@@ -1,0 +1,173 @@
+*{
+   padding:0;
+   margin:0;
+   &:focus{
+      outline: none !important;
+   }
+}
+
+html body{
+   overflow-x: hidden;
+}
+
+.full-width {
+   max-width: 100% !important;
+}
+hr{
+   border: solid 1px $oil;
+}
+#preload{
+   position: absolute;
+   top:0px;
+   left: 0;
+   z-index: 99999999;
+   height: 1000%;
+   width: 100%;
+   overflow: hidden;
+   background: $white;
+}
+header{
+   width: 100%;
+   padding: 30px 0;
+   background: 60% 50% no-repeat;
+   background-image: url("../videoBg/suppololonglight.jpg");
+   opacity: 1;
+   background-size: cover;
+   -webkit-background-size: cover;
+   #logo{
+      padding: 0 0 40px 0;
+   }
+}
+section{
+   padding: 30px 0 10px 0;
+   background-color: $white;
+   &#intro{
+      h2{
+         color: $oil;
+         font-family: 'moonlight';
+      }
+      h5{
+         padding: 0 0 30px 0;
+      }
+      p{
+         padding: 15px 0 0 0;
+      }
+      img{
+         max-width: 150px;
+         max-height: 150px;
+      }
+   }
+   &#pack{
+      height: 100%;
+      width: 100%;
+      background: 50% 0% no-repeat;
+      background-image: url("../img/wholy-paddle-pack.jpg");
+      opacity: 1;
+      background-size: cover;
+      -webkit-background-size: cover;
+      h2{
+         color: $white;
+         font-family: 'moonbold';
+      }
+   }
+   &#whiteLabel{
+      h4{
+         padding-top: 40px;
+         display: inline-block;
+      }
+      img{
+         max-height: 100px;
+         padding-left: 30px;
+      }
+   }
+}
+
+footer{
+   background-color: $white;
+   padding-bottom: 30px;
+}
+
+@media #{$medium-up}{
+   header{
+      padding: 60px 0;
+      a{
+         z-index: 100;
+         display: inline-block;
+         &:first-of-type{
+            margin-right: 30px;
+         }
+      }
+      h1{
+         padding-bottom: 30px;
+      }
+   }
+}
+@media #{$large-up}{
+   header{
+      height: 100%;
+      background-image: none;
+      padding: 0;
+      &:before {
+         content:"";
+         display: block;
+         height: 100%;
+         width: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: rgba(0,0,0,0.4);/* Old Browsers */
+         background: -moz-linear-gradient(30deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%); /* FF3.6+ */
+         background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,0,0,0.6)), color-stop(100%, rgba(0,0,0,0.1)));/* Chrome, Safari4+ */
+         background: -webkit-linear-gradient(30deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%); /* Chrome10+,Safari5.1+ */
+         background: -o-linear-gradient(30deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%); /* Opera 11.10+ */
+         background: -ms-linear-gradient(30deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%); /* IE 10+ */
+         background: linear-gradient(30deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%);/* W3C */
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+      }
+      video{
+         position: fixed;
+         z-index: -100;
+         &#bgvid{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+         }
+      }
+      #logo{
+         padding: 90px 0 60px 0;
+      }
+   }
+   section{
+      padding: 90px 0;
+      &#intro{
+         padding-bottom: 70px;
+      }
+      &#pack{
+         h2{
+            padding: 120px 0 30px 0;
+            span{
+               margin-right: 7px;
+            }
+         }
+         a{
+            margin-right: 11px;
+         }
+      }
+      &#whiteLabel{
+         h4{
+            padding-top: 118px;
+         }
+
+      }
+   }
+}
+@media #{$xlarge-up}{
+}
+@media #{$xxlarge-up}{
+}
