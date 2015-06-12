@@ -1,11 +1,12 @@
-body.modal-open {
+html.modal-open {
     overflow: hidden;
+    z-index: 999999999999;
 }
 .reveal-modal-bg {
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.8);
 }
 .reveal-modal{
-	border: solid 3px $smoke;
+	border: none;
 	box-shadow: none;
 	.scrollable-content{
 		overflow-y: scroll;
@@ -22,6 +23,10 @@ body.modal-open {
 		top: 1.3rem;
 		right: 1.7rem;
 		font-size: 3rem;
+      @include css-transition($fast-transition);
+      &:hover, &:active{
+         color: $oil;
+      }
 	}
 	p{
 		margin-top: 15px;

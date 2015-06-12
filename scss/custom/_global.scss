@@ -58,7 +58,7 @@ section{
       }
    }
    &#pack{
-      height: 100%;
+      min-height: 100%;
       width: 100%;
       background: 50% 0% no-repeat;
       background-image: url("../img/wholy-paddle-pack.jpg");
@@ -68,6 +68,7 @@ section{
       h2{
          color: $white;
          font-family: 'moonbold';
+         padding-top: 60px;
       }
    }
    &#whiteLabel{
@@ -99,6 +100,11 @@ footer{
       }
       h1{
          padding-bottom: 30px;
+      }
+   }
+   section{
+      &#pack{
+         padding-top: 120px;
       }
    }
 }
@@ -150,7 +156,6 @@ footer{
       }
       &#pack{
          h2{
-            padding: 120px 0 30px 0;
             span{
                margin-right: 7px;
             }
@@ -168,6 +173,25 @@ footer{
    }
 }
 @media #{$xlarge-up}{
+   header{
+      padding: 120px 0;
+   }
+   section{
+      padding: 120px 0 90px 0;
+      &#intro{
+         padding: 120px 0 100px 0;
+      }
+      &#pack{
+         h2{
+            padding: 360px 0 30px 0;
+         }
+      }
+   }
 }
 @media #{$xxlarge-up}{
+   header{
+      #logo{
+         padding-bottom: 190px;
+      }
+   }
 }
