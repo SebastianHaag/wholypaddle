@@ -35,75 +35,51 @@
 </head>
 <body>
    <div id="preload"></div>
-   <header class="gradient">
-      <video loop autoplay width="100%"  poster="videoBg/suppololonglight.jpg" id="bgvid" class="show-for-large-up">
-         <source src="videoBg/suppololonglight.webm" type="video/webm">
-         <source src="videoBg/suppololonglight.mp4" type="video/mp4">
-      </video>
+   <section id="orderForm">
       <div class="row" id="logo">
          <div class="small-8 medium-6 medium-offset-1 large-4 columns">
-            <img src="img/wholy-paddle-logo.svg" title="Wholy Paddle Logo" alt="Wholy Paddle Logo">
+            <img src="img/wholy-paddle-logo-dark.svg" title="Wholy Paddle Logo" alt="Wholy Paddle Logo">
+            <br><br><br>
          </div>
       </div>
-      <div class="row">
-         <div class="small-12 medium-11 medium-offset-1 columns">
-            <h1>Stand up paddle has just <br class="show-for-large-up">reached the next stage. <br class="show-for-medium-up">Let’s play with a ball.</h1>
-         </div>
-      </div>
-      <div class="row show-for-medium-up">
-         <div class="medium-11 medium-offset-1 columns">
-            <a href="#intro" class="button radius">HOW IT WORKS</a>
-            <a href="#pack" class="button radius">ORDER A PACK</a>
-         </div>
-      </div>
-   </header>
-   <section id="intro">
-      <div class="row">
-         <div class="small-12 medium-10 medium-centered columns text-center">
-            <h2>A playfull SUP experience</h2>
-            <h5>Thanks to their unique design, wholy paddles enable you <br class="show-for-large-up">to move forward, retrieve and pass the ball away.</h5>
-         </div>
-      </div>
-      <div class="row">
-         <div class="small-12 small-centered large-4 large-uncentered columns text-center">
-            <h4>Catch &amp; throw</h4>
-            <img src="img/catchandthrow.svg">
-            <p>2 players &amp; more<br>For everyone</p>
-         </div>
-         <div class="small-12 small-centered large-4 large-uncentered columns text-center">
-            <h4>Flyball</h4>
-            <img src="img/flyball.svg">
-            <p>3 players &amp; more<br>Mid balance skills</p>
-         </div>
-         <div class="small-12 small-centered large-4 large-uncentered columns text-center">
-            <h4>Sup polo</h4>
-            <img src="img/suppolo.svg">
-            <p>6 players<br>You could get wet</p>
-         </div>
-      </div>
-   </section>
-   <section id="pack">
-      <div class="row">
-         <div class="small-12 small-text-left medium-10 medium-text-right columns end ">
-            <h2>Get your early bird package!<br><span>3 blue - 3 red</span></h2>
-            <a href="order.html" target="_blank" class="button radius">GET IT NOW</a>
-         </div>
-      </div>
-   </section>
-   <section id="whiteLabel">
       <div class="row">
          <div class="small-12 medium-10 medium-offset-1 columns end">
-            <h2>PERSONALIZE YOUR WHOLY<br class="show-for-large-up"> PADDLES TO YOUR BRAND</h2>
+            <h2>GET STARTED WITH 6 WHOLY PADDLES<br>3 blue - 3 red</h2>
+            <p>We just recieved our first production batch, send us a message to get your pack!</p>
+            <br><br>
          </div>
       </div>
-      <div class="row">
-         <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
-            <p>Wholy paddle have been invented, <br>designed and PATENTED IN 2014.</p>
-            <p>We DO produce FOR PARTNERS. <br><a href="mailto:pierre.yves@wholypaddle.com">contact us</a> today to GET YOUR BRANDED WHOLY PADDLES BEFORE SUMMER 2016!</p>
-         </div>
-         <div  class="small-12 medium-10 medium-offset-1 large-text-right large-5 large-offset-0 xlarge-4 xlarge-offset-1 columns end ">
-            <h4>already partners</h4>
-            <a href="http://star-board-sup.com/2015/products/astro-sup-polo/" target="_blank" title="Starboard Astro SUP polo" alt="Starboard Astro SUP polo"></ahref><img src="img/Tiki.png"></a>
+      <div class="scrollable-content">
+         <div id="message" class="row collapse"></div>
+         <div class="row collapse">
+            <form method="post" action="contact_form.php" name="contactform" id="contactform" novalidate>
+               <div class="row">
+                  <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
+                     <input type="text" id="name" placeholder="Name">
+                  </div>
+                  <div class="small-12 medium-10 medium-offset-1 large-5 large-offset-0 columns end">
+                     <input type="text" id="company" placeholder="Company">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
+                     <input type="email" id="email" placeholder="Email">
+                  </div>
+                  <div class="small-12 medium-10 medium-offset-1 large-5  large-offset-0 columns end">
+                     <input type="tel" id="phone" placeholder="Phone">
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="small-12 medium-10 medium-offset-1 columns end radius">
+                     <textarea type="text" id="remarks" name="remarks"></textarea>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="small-12 medium-6 medium-offset-1 columns end" class="right">
+                     <button class="button radius dark" id="submit" type="submit">SEND</button>
+                  </div>
+               </div>
+            </form>
          </div>
       </div>
    </section>
@@ -132,7 +108,6 @@
       return false;
    });
    </script>
-   <!-- FORM -->
    <script>
    jQuery(document).ready(function(){
       $('#contactForm').submit(function(){
