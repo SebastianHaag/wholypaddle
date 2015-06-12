@@ -26,12 +26,12 @@
    <meta name="theme-color" content="#ffffff">
    <script src="bower_components/modernizr/modernizr.js"></script>
    <!--[if gte IE 9]
-      <style type="text/css">
-         .gradient {
-         filter: none;
-         }
-      </style>
-   <![endif]-->
+   <style type="text/css">
+   .gradient {
+   filter: none;
+}
+</style>
+<![endif]-->
 </head>
 <body>
    <div id="preload"></div>
@@ -50,7 +50,10 @@
          </div>
       </div>
       <div class="scrollable-content">
-         <div id="message" class="row collapse"></div>
+         <div class="row">
+            <div class="small-12 medium-10 medium-offset-1 columns end" id="message">
+            </div>
+         </div>
          <div class="row collapse">
             <form method="post" action="contact_form.php" name="contactform" id="contactform" novalidate>
                <div class="row">
@@ -109,30 +112,32 @@
    });
    </script>
    <script>
-   jQuery(document).ready(function(){
-      $('#contactForm').submit(function(){
-         var action = $(this).attr('action');
-         $('#contactform #submit').attr('disabled','disabled').after();
-         $("#message").slideUp(600,function() {
-            $('#message').hide();
-            $.post(action, {
-               email: $('#email').val(),
-               name: $('#name').val(),
-               company: $('#company').val(),
-               phone: $('#phone').val(),
-               remarks: $('#remarks').val(),
-            },
-            function(data){
-               document.getElementById('message').innerHTML = data;
-               $('#message').slideDown('slow');
-               $('#contactform').fadeOut('fast',function(){$(this).remove()});
-               $('#contactform #submit').removeAttr('disabled','');
-               if(data.match('success') != null) $('#contactform').slideUp('slow');
+        jQuery(document).ready(function(){
+            $('#contactform').submit(function(){
+                var action = $(this).attr('action');
+                $('#contactform #submit').attr('disabled','disabled').after();
+                $("#message").slideUp(750,function() {
+                $('#message').hide();
+                $.post(action, {
+                    email: $('#email').val(),
+                    name: $('#name').val(),
+                    company: $('#company').val(),
+                    phone: $('#phone').val(),
+                    remarks: $('#remarks').val(),
+                },
+                    function(data){
+                        document.getElementById('message').innerHTML = data;
+                        $('#message').slideDown('slow');
+                        $('#contactform img.loader').fadeOut('fast',function(){$(this).remove()});
+                        $('#contactform #submit').removeAttr('disabled','');
+                        if(data.match('success') != null) $('#contactform').slideUp('slow');
+
+                    }
+                );
+                });
+                return false;
             });
-         });
-         return false;
-      });
-   });
+        });
    </script>
 </body>
 </html>

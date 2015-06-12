@@ -1,4 +1,4 @@
-.button{
+button, button[type="disabled"], button[disabled="disabled"], .button, .button.disabled{
 	width: 210px;
 	display: inline-block;
 	overflow: hidden;
@@ -14,6 +14,7 @@
 	}
 	&.dark{
 		color: $jumbo;
+		background-color: $white;
 		border: solid 3px $jumbo;
 		&:hover, &:active, &:focus{
 				background-color: $oil;
@@ -23,7 +24,7 @@
 	}
 }
 @media #{$large-up}{
-	.button{
+	.button, .button.disabled{
 		color: $white;
 		background-color: transparent;
 		&:hover, &:active, &:focus{

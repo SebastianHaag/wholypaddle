@@ -8,7 +8,7 @@ if(!$_POST) exit;
 
 // Enter the email address that you want to emails to be sent to.
 
-$address = "sebastian@yadlo.ch";
+$address = "pierre.yves@wholypaddle.com";
 
 
 // END OF Simple Configuration Options
@@ -37,8 +37,8 @@ if(trim($email) == '') {
 
 
 if($error != '') {
-   echo '<h5>Please correct the errors below and try again.</h5>';
-   echo '<p class="error">' . $error . '</p>';
+   echo '<p>Please correct the errors below and try again.</p>';
+   echo '<p class="error">' . $error . '</p><br>';
 
 
 } else {
@@ -65,7 +65,7 @@ if($error != '') {
       echo "<fieldset>";
       echo "<div id='success_page'>";
       echo "<h4>Email Sent Successfully.</h4>";
-      echo "<p>Thank you <strong>$name</strong>, we will get back to you as soon as possible.</p>";
+      echo "<h6>Thank you <strong>$name</strong>, we will get back to you as soon as possible.</h6><br>";
       echo "</div>";
       echo "</fieldset>";
 

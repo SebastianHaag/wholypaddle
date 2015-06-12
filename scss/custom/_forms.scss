@@ -26,6 +26,13 @@ textarea{
 		background: none;
 	}
 }
-fieldset{
-	border: solid 3px $oil;
+.button.disabled{
+	border: solid 2px $jumbo;
+}
+
+fieldset {
+  border: 2px solid $jumbo;
+}
+#message p{
+	color: $alert-color !important;
 }
