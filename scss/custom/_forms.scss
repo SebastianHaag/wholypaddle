@@ -3,22 +3,29 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 	border: none;
 	font-size: 18px;
 	margin-bottom: 30px;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"]{
-	border-bottom: solid 2px $jumbo;
+	border-bottom: solid 3px $jumbo;
 	background: none;
 	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	&:hover, &:focus, &:active{
-		border-bottom: solid 2px $oil;
+		border-bottom: solid 3px $oil;
 		background: none;
 	}
 }
 textarea{
 	min-height: 150px;
-	border: solid 2px $jumbo;
+	border: solid 3px $jumbo;
 	margin-top: 20px;
+	border-radius: $global-radius;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	&:hover, &:focus, &:active{
-		border: solid 2px $oil;
+		border: solid 3px $oil;
 		background: none;
 	}
+}
+fieldset{
+	border: solid 3px $oil;
 }

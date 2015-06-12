@@ -12,12 +12,21 @@
 			background-color: transparent;
 			color: $white;
 	}
+	&.dark{
+		color: $jumbo;
+		border: solid 3px $jumbo;
+		&:hover, &:active, &:focus{
+				background-color: $oil;
+				color: $white;
+				border: solid 3px $oil;
+		}
+	}
 }
 @media #{$large-up}{
 	.button{
 		color: $white;
 		background-color: transparent;
-		&:hover, &:active{
+		&:hover, &:active, &:focus{
 				background-color: $white;
 				color: $oil;
 		}
