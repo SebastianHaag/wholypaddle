@@ -49,35 +49,41 @@
             <br><br>
          </div>
       </div>
-      <div class="row collapse">
-         <form method="post" action="contact_form.php" name="contactform" id="contactform" novalidate>
-            <div class="row">
-               <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
-                  <input type="text" id="name" placeholder="Name">
-               </div>
-               <div class="small-12 medium-10 medium-offset-1 large-5 large-offset-0 columns end">
-                  <input type="text" id="company" placeholder="Company">
-               </div>
+      <div class="scrollable-content">
+         <div class="row">
+            <div class="small-12 medium-10 medium-offset-1 columns end" id="message">
             </div>
-            <div class="row">
-               <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
-                  <input type="email" id="email" placeholder="Email">
+         </div>
+         <div class="row collapse">
+            <form method="post" action="contact_form.php" name="contactform" id="contactform" novalidate>
+               <div class="row">
+                  <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
+                     <input type="text" id="name" placeholder="Name">
+                  </div>
+                  <div class="small-12 medium-10 medium-offset-1 large-5 large-offset-0 columns end">
+                     <input type="text" id="company" placeholder="Company">
+                  </div>
                </div>
-               <div class="small-12 medium-10 medium-offset-1 large-5  large-offset-0 columns end">
-                  <input type="tel" id="phone" placeholder="Phone">
+               <div class="row">
+                  <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
+                     <input type="email" id="email" placeholder="Email">
+                  </div>
+                  <div class="small-12 medium-10 medium-offset-1 large-5  large-offset-0 columns end">
+                     <input type="tel" id="phone" placeholder="Phone">
+                  </div>
                </div>
-            </div>
-            <div class="row">
-               <div class="small-12 medium-10 medium-offset-1 columns end radius">
-                  <textarea type="text" id="remarks" name="remarks"></textarea>
+               <div class="row">
+                  <div class="small-12 medium-10 medium-offset-1 columns end radius">
+                     <textarea type="text" id="remarks" name="remarks"></textarea>
+                  </div>
                </div>
-            </div>
-            <div class="row">
-               <div class="small-12 medium-6 medium-offset-1 columns end" class="right">
-                  <button class="button radius dark" id="submit" type="submit">SEND</button>
+               <div class="row">
+                  <div class="small-12 medium-6 medium-offset-1 columns end" class="right">
+                     <button class="button radius dark" id="submit" type="submit">SEND</button>
+                  </div>
                </div>
-            </div>
-         </form>
+            </form>
+         </div>
       </div>
    </section>
    <footer>
