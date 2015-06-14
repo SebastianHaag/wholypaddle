@@ -45,45 +45,39 @@
       <div class="row">
          <div class="small-12 medium-10 medium-offset-1 columns end">
             <h2>GET STARTED WITH 6 WHOLY PADDLES<br>3 blue - 3 red</h2>
-            <p>We just recieved our first production batch, send us a message to get your pack!</p>
+            <p>We just received our first production batch, send us a message to get your pack!</p>
             <br><br>
          </div>
       </div>
-      <div class="scrollable-content">
-         <div class="row">
-            <div class="small-12 medium-10 medium-offset-1 columns end" id="message">
+      <div class="row collapse">
+         <form method="post" action="contact_form.php" name="contactform" id="contactform" novalidate>
+            <div class="row">
+               <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
+                  <input type="text" id="name" placeholder="Name">
+               </div>
+               <div class="small-12 medium-10 medium-offset-1 large-5 large-offset-0 columns end">
+                  <input type="text" id="company" placeholder="Company">
+               </div>
             </div>
-         </div>
-         <div class="row collapse">
-            <form method="post" action="contact_form.php" name="contactform" id="contactform" novalidate>
-               <div class="row">
-                  <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
-                     <input type="text" id="name" placeholder="Name">
-                  </div>
-                  <div class="small-12 medium-10 medium-offset-1 large-5 large-offset-0 columns end">
-                     <input type="text" id="company" placeholder="Company">
-                  </div>
+            <div class="row">
+               <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
+                  <input type="email" id="email" placeholder="Email">
                </div>
-               <div class="row">
-                  <div class="small-12 medium-10 medium-offset-1 large-5 columns end">
-                     <input type="email" id="email" placeholder="Email">
-                  </div>
-                  <div class="small-12 medium-10 medium-offset-1 large-5  large-offset-0 columns end">
-                     <input type="tel" id="phone" placeholder="Phone">
-                  </div>
+               <div class="small-12 medium-10 medium-offset-1 large-5  large-offset-0 columns end">
+                  <input type="tel" id="phone" placeholder="Phone">
                </div>
-               <div class="row">
-                  <div class="small-12 medium-10 medium-offset-1 columns end radius">
-                     <textarea type="text" id="remarks" name="remarks"></textarea>
-                  </div>
+            </div>
+            <div class="row">
+               <div class="small-12 medium-10 medium-offset-1 columns end radius">
+                  <textarea type="text" id="remarks" name="remarks"></textarea>
                </div>
-               <div class="row">
-                  <div class="small-12 medium-6 medium-offset-1 columns end" class="right">
-                     <button class="button radius dark" id="submit" type="submit">SEND</button>
-                  </div>
+            </div>
+            <div class="row">
+               <div class="small-12 medium-6 medium-offset-1 columns end" class="right">
+                  <button class="button radius dark" id="submit" type="submit">SEND</button>
                </div>
-            </form>
-         </div>
+            </div>
+         </form>
       </div>
    </section>
    <footer>
