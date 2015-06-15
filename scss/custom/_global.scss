@@ -81,6 +81,11 @@ section{
          padding-left: 30px;
       }
    }
+   &#thumbs{
+      img{
+         padding-bottom: 15px;
+      }
+   }
 }
 
 footer{
@@ -107,6 +112,12 @@ footer{
          padding-top: 120px;
          h2{
             padding-bottom: 30px;
+         }
+      }
+      &#thumbs{
+         padding-top:0;
+         img{
+            padding-bottom: 0;
          }
       }
    }
