@@ -52,7 +52,7 @@ if($error != '') {
    // Advanced Configuration Option.
    // You can change this if you feel that you need to.
    // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
-   $msg = "You have been contacted by $name from www.oym.co.\r\n\n";
+   $msg = "You have been contacted by $name from www.wholypaddle.com.\r\n\n";
    $msg .= "His(her) company is: $company.\r\n\n";
    $msg .= "$remarks\r\n\n";
    $msg .= "You can contact $name: $email or $phone.\r\n\n";
